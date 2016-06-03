@@ -97,6 +97,7 @@ MULTIPLE ESTIMATE ENTRY
 **************************************************/
 .multiple {
   padding: 30px 0;
+  position: relative;
 }
 
 /* MULTIPLE: HEADER *****************************/
@@ -180,6 +181,10 @@ MULTIPLE ESTIMATE ENTRY
   font-size: 13px;
   margin-top: -50px;
 }
+.multiple-table-rev {
+  display: none;
+}
+
 .multiple-table-tr-actuals {
   background: #F4F5F6;
   border: 1px solid #ddd;
@@ -245,6 +250,10 @@ MULTIPLE ESTIMATE ENTRY
     display: inline-block;
     padding: 10px 10px 15px 10px;
     border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  .multiple-table-tabs-tab:hover {
+    color: #555;
   }
   .multiple-table-tabs-tab-active {
     background: #fff;
@@ -253,6 +262,9 @@ MULTIPLE ESTIMATE ENTRY
     border-top: 4px solid #DA00E1;
     color: #DA00E1;
     border-bottom: none;
+  }
+  .multiple-table-tabs-tab-active:hover {
+    color: #DA00E1;
   }
   .multiple-table-tabs-tab-active.multiple-table-tabs-tab-eps {
     border-right: 1px solid #ddd;
@@ -293,6 +305,9 @@ saved:active*/
   width: 100%;
   height: 29px;
 }
+.multiple-table-estimate-input-number:focus {
+  outline: 0;
+}
 .multiple-table-estimate-yoy {
   color: #DA00E1;
   font-size: 12px;
@@ -330,6 +345,7 @@ saved:active*/
     .multiple-table-td-plus .multiple-table-estimate-plus:hover {
       border: 1px dashed #777777;
       color: #777;
+      cursor: pointer;
     }
     .multiple-table-td-plus .multiple-table-estimate-plus:active {
       background: #fff;
@@ -343,8 +359,9 @@ saved:active*/
 /* OPEN QUARTERS: TOOLTIPS */
 .multiple-tooltips {
   position: absolute;
-  top: 420px;
-  right: 350px;
+  top: 150px;
+  left: 50%;
+  margin-left: 375px;
 }
   .multiple-tooltips-tooltip {
     color: #fff;
@@ -357,20 +374,31 @@ saved:active*/
     height: 67px;
     display: none;
   }
-  .multiple-tooltips-tooltip-show {
+  .multiple-tooltips-eps,
+  .multiple-tooltips-rev {
+    display: none;
+  }
+  .multiple-tooltips-eps-one,
+  .multiple-tooltips-rev-one {
+    left: -230px;
     display: block;
   }
-  .multiple-tooltips-eps-one {
-    left: -230px;
+  .multiple-tooltips-eps-two,
+  .multiple-tooltips-rev-two {
+    left: -135px;
   }
-  .multiple-tooltips-eps-two {
-    left: -150px;
+  .multiple-tooltips-eps-three,
+  .multiple-tooltips-rev-three {
+    left: -55px;
   }
-  .multiple-tooltips-eps-three {
-    left: -50px;
-  }
-  .multiple-tooltips-eps-four {
+  .multiple-tooltips-eps-four,
+  .multiple-tooltips-rev-four {
     left: 20px;
+  }
+  .multiple-tooltips-eps-button,
+  .multiple-tooltips-rev-button {
+    top: 155px;
+    left: -100px;
   }
 
 /* OPEN QUARTERS: BUTTON */
@@ -391,6 +419,7 @@ saved:active*/
   display: block;
   width: 100%;
   font-weight: 600;
+  opacity: 0.3;
 }
   .multiple-table-button:hover {
     background-image: linear-gradient(-180deg, #ED7250 0%, #8F1902 100%);
@@ -402,15 +431,24 @@ saved:active*/
   }
   .multiple-table-button:active {
     background-image: linear-gradient(-180deg, #B24729 0%, #BB3318 100%);
-    border: 1px solid #9A3500;
     box-shadow: inset 0px 1px 7px 0px rgba(0,0,0,0.50);
-    border-radius: 1px;
     outline: 0;
   }
-  .multiple-table-button-disabled {
-    opacity: 0.3;
+.multiple-table-button-green {
+  background-image: linear-gradient(-180deg, #37B237 0%, #318A0D 100%);
+  border: 1px solid #155900;
+  border-radius: 1px;
+}
+  .multiple-table-button-green:hover {
+    background-image: linear-gradient(-180deg, #23A223 0%, #227500 100%);
+    border: 1px solid #155900;
+    border-radius: 1px;
   }
-
+  .multiple-table-button-green:active {
+    background-image: linear-gradient(-180deg, #097F08 0%, #227500 100%);
+    border: 1px solid #155900;
+    box-shadow: inset 0px 1px 7px 0px rgba(0,0,0,0.50);
+  }
 
 
 
