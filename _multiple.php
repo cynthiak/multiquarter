@@ -125,7 +125,7 @@
     <tr class="multiple-table-tr-button">
       <td colspan="9"></td>
       <td class="multiple-table-td-button" colspan="4">
-        <button class="multiple-table-button multiple-table-button-eps" disabled>I'm done with EPS. Let me do revenue &raquo;</button>
+        <button class="multiple-table-button multiple-table-button-eps" disabled>Done with EPS. Let me do revenue &raquo;</button>
       </td>
     </tr>
   </table>

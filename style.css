@@ -194,7 +194,7 @@ MULTIPLE ESTIMATE ENTRY
   border-top: none;
 }
 .multiple-table-tr-qtrs td {
-  padding: 10px 10px 6px 10px;
+  padding: 10px 5px 6px;
 }
 .multiple-table-tr-actuals td,
 .multiple-table-tr-consensus td {
@@ -285,7 +285,7 @@ td.multiple-table-td-label {
 
 .multiple-table-tr-actuals .multiple-table-td-open {
   padding: 8px 10px 6px;
-  width: 80px;
+  width: 72px;
 }
 .multiple-table-tr-consensus .multiple-table-td-open {
   padding: 10px 10px 6px;
@@ -306,7 +306,7 @@ saved:active*/
 .multiple-table-qtr-close {
   color: #bbb;
   opacity: 0.8;
-  margin-left: 8px;
+  margin-left: 5px;
   display: none;
 }
 .multiple-table-qtr-close:hover {
@@ -317,7 +317,7 @@ saved:active*/
 }
 
 .multiple-table-estimate-input-number {
-  padding: 3px 5px 0;
+  padding: 3px 0px 0 3px;
   margin-bottom: 2px;
   width: 100%;
   height: 29px;
@@ -336,7 +336,7 @@ saved:active*/
 }
   /*STATE: EDITING */
   .multiple-table-tr-actuals .multiple-table-td-editing {
-    width: 100px;
+    width: 94px;
   }
   .multiple-table-td-editing .multiple-table-estimate-input-number{
     border: 1px solid #DA00E1;
@@ -375,12 +375,13 @@ saved:active*/
   }
   /*STATE: EDITED */
   .multiple-table-estimate-input-number-edited {
-    background: #fff url('images/check.png') no-repeat 38px center;
+    background: #fff url('images/check.png') no-repeat 33px center;
     border: 1px solid #bbbbbb;
+    width: 100%;
 
   }
   .multiple-table-td-editing .multiple-table-estimate-input-number-edited.multiple-table-estimate-input-number:not(:focus) {
-    background: #fff url('images/check.png') no-repeat 58px center;
+    background: #fff url('images/check.png') no-repeat 55px center;
     border: 1px solid #bbbbbb;
   }
 
@@ -410,20 +411,20 @@ saved:active*/
   }
   .multiple-tooltips-eps-one,
   .multiple-tooltips-rev-one {
-    left: -230px;
+    left: -200px;
     display: block;
   }
   .multiple-tooltips-eps-two,
   .multiple-tooltips-rev-two {
-    left: -135px;
+    left: -120px;
   }
   .multiple-tooltips-eps-three,
   .multiple-tooltips-rev-three {
-    left: -55px;
+    left: -45px;
   }
   .multiple-tooltips-eps-four,
   .multiple-tooltips-rev-four {
-    left: 20px;
+    left: 25px;
   }
   .multiple-tooltips-eps-button,
   .multiple-tooltips-rev-button {
@@ -497,7 +498,7 @@ saved:active*/
   border-top: 0;
   position: absolute; 
   right: 29px;
-  width: 341px;
+  width: 311px;
   height: 501px;
 }
 
