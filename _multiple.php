@@ -64,28 +64,28 @@
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="0.49" step="0.01"/>
         </span>
-        <span class="multiple-table-estimate-yoy">15%</span>
+        <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">15</span>%</span>
       </td>
       <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-two multiple-table-td-plus">
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="0.45" step="0.01"/>
         </span>
         <span class="multiple-table-estimate-plus">+</span>
-        <span class="multiple-table-estimate-yoy">10%</span>
+        <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">10</span>%</span>
       </td>
       <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-three multiple-table-td-plus">
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="0.42" step="0.01"/>
         </span>
         <span class="multiple-table-estimate-plus">+</span>
-        <span class="multiple-table-estimate-yoy">13%</span>
+        <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">13</span>%</span>
       </td>
       <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-four multiple-table-td-plus">
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="0.47" step="0.01"/>
         </span>
         <span class="multiple-table-estimate-plus">+</span>
-        <span class="multiple-table-estimate-yoy">20%</span>
+        <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">20</span>%</span>
       </td>
     </tr>
 
@@ -177,28 +177,28 @@
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="2300" step="1"/>
         </span>
-        <span class="multiple-table-estimate-yoy">25%</span>
+        <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">25</span>%</span>
       </td>
       <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-two multiple-table-td-plus">
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="2330" step="1"/>
         </span>
         <span class="multiple-table-estimate-plus">+</span>
-        <span class="multiple-table-estimate-yoy">31%</span>
+        <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">31</span>%</span>
       </td>
       <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-three multiple-table-td-plus">
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="2321" step="1"/>
         </span>
         <span class="multiple-table-estimate-plus">+</span>
-        <span class="multiple-table-estimate-yoy">33%</span>
+        <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">33</span>%</span>
       </td>
       <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-four multiple-table-td-plus">
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="2400" step="1"/>
         </span>
         <span class="multiple-table-estimate-plus">+</span>
-        <span class="multiple-table-estimate-yoy">35%</span>
+        <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">35</span>%</span>
       </td>
     </tr>
 
@@ -238,7 +238,7 @@
     <tr class="multiple-table-tr-button">
       <td colspan="9"></td>
       <td class="multiple-table-td-button" colspan="4">
-        <button class="multiple-table-button multiple-table-button-rev" disabled>Create estimates &raquo;</button>
+        <button class="multiple-table-button multiple-table-button-rev" disabled>Create 1 estimate &raquo;</button>
       </td>
     </tr>
   </table>

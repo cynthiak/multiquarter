@@ -2,32 +2,24 @@ $(document).ready(function(){
 
 $(".multiple-tooltips-eps").delay(2000).fadeIn();
 
-// Click into the first EPS input box
-$(".multiple-table-eps .multiple-table-td-open-one .multiple-table-estimate-input-number").focus(function(){
-  enableEPSButton();
-  fadeNextEPSTooltip();
+
+// Toggle to revenue
+$(".multiple-table-tabs-tab-revenue").click(function(){
+  toggleRevenue();
+});
+$(".multiple-table-button-eps").click(function(){
+  toggleRevenue();
 });
 
-// Click into an EPS input box
-$(".multiple-table-eps .multiple-table-estimate-input-number").focus(function(){
-  $(".multiple-table-eps .multiple-table-td-editing").removeClass("multiple-table-td-editing");
-  $(this).parents(".multiple-table-td-open").addClass("multiple-table-td-editing");
-});
-
-// Click into a revenue input box
-$(".multiple-table-rev .multiple-table-estimate-input-number").focus(function(){
-  fadeNextRevenueTooltip();
-  $(".multiple-table-rev .multiple-table-td-editing").removeClass("multiple-table-td-editing");
-  $(this).parents(".multiple-table-td-open").addClass("multiple-table-td-editing");
-});
-
-$(".multiple-table-rev .multiple-table-estimate-input-number").change(function(){
-  enableRevenueButton();
+// Toggle to EPS
+$(".multiple-table-tabs-tab-eps").click(function(){
+  toggleEPS();
 });
 
 
-var estimate_count = 1
+
 // Click into any of the EPS plus signs
+var estimate_count = 1
 $(".multiple-table-eps .multiple-table-estimate-plus").click(function(){
   enableEPSButton();
   fadeNextEPSTooltip();
@@ -35,13 +27,11 @@ $(".multiple-table-eps .multiple-table-estimate-plus").click(function(){
   $(".multiple-table-eps .multiple-table-td-editing").removeClass("multiple-table-td-editing")
   $(this).parent(".multiple-table-td-plus").removeClass("multiple-table-td-plus").addClass("multiple-table-td-editing");
   $(this).siblings(".multiple-table-estimate-input").fadeIn();
-
   // update button count
   if (estimate_count < 5) {
     estimate_count++;
     updateButton();
   }
-
   // activate the revenue equivalents as well
   if ($(this).parent().hasClass("multiple-table-td-open-two")) {
     $(".multiple-table-rev .multiple-table-td-open-two .multiple-table-estimate-plus").hide();
@@ -58,7 +48,6 @@ $(".multiple-table-eps .multiple-table-estimate-plus").click(function(){
   }
 });
 
-
 // Click into any of the revenue plus signs
 $(".multiple-table-rev .multiple-table-estimate-plus").click(function(){
   enableRevenueButton();
@@ -67,13 +56,11 @@ $(".multiple-table-rev .multiple-table-estimate-plus").click(function(){
   $(".multiple-table-rev .multiple-table-td-editing").removeClass("multiple-table-td-editing")  
   $(this).parent(".multiple-table-td-plus").removeClass("multiple-table-td-plus").addClass("multiple-table-td-editing");
   $(this).siblings(".multiple-table-estimate-input").fadeIn();
-
   // update button count
   if (estimate_count < 5) {
     estimate_count++;
     updateButton();
   }
-
   // activate the eps equivalents as well
   enableEPSButton();
   if ($(this).parent().hasClass("multiple-table-td-open-two")) {
@@ -88,6 +75,57 @@ $(".multiple-table-rev .multiple-table-estimate-plus").click(function(){
   }
 });
 
+
+
+// Click into the first EPS input box
+$(".multiple-table-eps .multiple-table-td-open-one .multiple-table-estimate-input-number").focus(function(){
+  enableEPSButton();
+  fadeNextEPSTooltip();
+  $(this).css({"color": "#555555", "fontStyle": "normal"});
+});
+
+
+
+// Click into an EPS input box
+$(".multiple-table-eps .multiple-table-estimate-input-number").focus(function(){
+  $(".multiple-table-eps .multiple-table-td-editing").removeClass("multiple-table-td-editing");
+  $(this).parents(".multiple-table-td-open").addClass("multiple-table-td-editing");
+  $(this).css({"color": "#555555", "fontStyle": "normal"});
+});
+
+// Click into a revenue input box
+$(".multiple-table-rev .multiple-table-estimate-input-number").focus(function(){
+  fadeNextRevenueTooltip();
+  $(".multiple-table-rev .multiple-table-td-editing").removeClass("multiple-table-td-editing");
+  $(this).parents(".multiple-table-td-open").addClass("multiple-table-td-editing");
+  $(this).css({"color": "#555555", "fontStyle": "normal"});
+});
+
+
+
+// Update revenue field, check if revenue button should be enabled
+$(".multiple-table-rev .multiple-table-estimate-input-number").change(function(){
+  enableRevenueButton();
+});
+
+
+
+// Adjust estimates, update YoY growth
+$(".multiple-table-estimate-input-number").on('input', function(){ 
+  var yoy = $(this).parents(".multiple-table-td-open").find(".multiple-table-estimate-yoy-number");
+  var yoy_number = parseInt(yoy.html());
+  yoy_number = yoy_number + 3;
+  yoy.html(yoy_number);
+});
+
+
+
+
+
+
+
+
+// ------------------------------------------- FUNCTIONS
 
 // Fade in next EPS tooltip
 var eps_tooltip = 1;
@@ -151,7 +189,7 @@ function fadeNextRevenueTooltip() {
 // Enable EPS button
 function enableEPSButton() {
   $(".multiple-table-button-eps").prop("disabled", false);
-  $(".multiple-table-button-eps").delay(100).fadeTo("slow", 1.0);
+  $(".multiple-table-button-eps").delay(100).fadeTo("fast", 1.0);
 }
 
 // Enable EPS button
@@ -177,7 +215,7 @@ function enableRevenueButton() {
 
   if (rev_one && rev_two && rev_three && rev_four) {
     $(".multiple-table-button-rev").prop("disabled", false);
-    $(".multiple-table-button-rev").fadeTo(500, 1.0);
+    $(".multiple-table-button-rev").fadeTo(100, 1.0);
     $(".multiple-table-button-rev").delay(600).addClass("multiple-table-button-green");
   }
 }
@@ -186,20 +224,6 @@ function enableRevenueButton() {
 function updateButton() {
   $(".multiple-table-button-rev").html("Create " + estimate_count + " Estimates &raquo;");
 }
-
-// Toggle to revenue
-$(".multiple-table-tabs-tab-revenue").click(function(){
-  toggleRevenue();
-});
-$(".multiple-table-button-eps").click(function(){
-  toggleRevenue();
-});
-
-// Toggle to EPS
-$(".multiple-table-tabs-tab-eps").click(function(){
-  toggleEPS();
-});
-
 
 // Toggle to revenue view
 function toggleRevenue() {

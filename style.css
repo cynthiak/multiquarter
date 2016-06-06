@@ -304,6 +304,8 @@ saved:active*/
   margin-bottom: 2px;
   width: 100%;
   height: 29px;
+  color: #bbb;
+  font-style: italic;
 }
 .multiple-table-estimate-input-number:focus {
   outline: 0;
@@ -362,6 +364,7 @@ saved:active*/
   top: 150px;
   left: 50%;
   margin-left: 375px;
+  font-size: 13px;
 }
   .multiple-tooltips-tooltip {
     color: #fff;
@@ -370,7 +373,7 @@ saved:active*/
     position: absolute;
     width: 130px;
     background: url('images/tooltip-bg-arrow.png') no-repeat center center;
-    padding: 10px;
+    padding: 10px 5px;
     height: 67px;
     display: none;
   }
@@ -436,17 +439,17 @@ saved:active*/
   }
 .multiple-table-button-green {
   background-image: linear-gradient(-180deg, #37B237 0%, #318A0D 100%);
-  border: 1px solid #155900;
+  border: 1px solid #259502;
   border-radius: 1px;
 }
   .multiple-table-button-green:hover {
     background-image: linear-gradient(-180deg, #23A223 0%, #227500 100%);
-    border: 1px solid #155900;
+    border: 1px solid #259502;
     border-radius: 1px;
   }
   .multiple-table-button-green:active {
     background-image: linear-gradient(-180deg, #097F08 0%, #227500 100%);
-    border: 1px solid #155900;
+    border: 1px solid #259502;
     box-shadow: inset 0px 1px 7px 0px rgba(0,0,0,0.50);
   }
 
