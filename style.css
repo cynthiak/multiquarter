@@ -200,7 +200,10 @@ MULTIPLE ESTIMATE ENTRY
 .multiple-table-tr-consensus td {
   padding: 6px 10px;
 }
-
+td.multiple-table-td-label {
+  width: 85px;
+  padding-right: 0;
+}
 .multiple-table-label-data {
   font-weight: 600;
 }
@@ -299,6 +302,20 @@ plus:active
 saved
 saved:hover
 saved:active*/
+
+.multiple-table-qtr-close {
+  color: #bbb;
+  opacity: 0.8;
+  margin-left: 8px;
+  display: none;
+}
+.multiple-table-qtr-close:hover {
+  color: #bbb;
+  text-decoration: none;
+  opacity: 1.0;
+  cursor: pointer;
+}
+
 .multiple-table-estimate-input-number {
   padding: 3px 5px 0;
   margin-bottom: 2px;
@@ -310,13 +327,13 @@ saved:active*/
 .multiple-table-estimate-input-number:focus {
   outline: 0;
 }
+
 .multiple-table-estimate-yoy {
   color: #DA00E1;
   font-size: 12px;
   font-weight: 600;
   display: block;
 }
-
   /*STATE: EDITING */
   .multiple-table-tr-actuals .multiple-table-td-editing {
     width: 100px;
@@ -355,6 +372,16 @@ saved:active*/
     }
   .multiple-table-td-plus .multiple-table-estimate-yoy {
     color: #9d9d9d;
+  }
+  /*STATE: EDITED */
+  .multiple-table-estimate-input-number-edited {
+    background: #fff url('images/check.png') no-repeat 38px center;
+    border: 1px solid #bbbbbb;
+
+  }
+  .multiple-table-td-editing .multiple-table-estimate-input-number-edited.multiple-table-estimate-input-number:not(:focus) {
+    background: #fff url('images/check.png') no-repeat 58px center;
+    border: 1px solid #bbbbbb;
   }
 
 

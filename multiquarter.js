@@ -28,7 +28,7 @@ $(".multiple-table-eps .multiple-table-estimate-plus").click(function(){
   $(this).parent(".multiple-table-td-plus").removeClass("multiple-table-td-plus").addClass("multiple-table-td-editing");
   $(this).siblings(".multiple-table-estimate-input").fadeIn();
   // update button count
-  if (estimate_count < 5) {
+  if (estimate_count < 4) {
     estimate_count++;
     updateButton();
   }
@@ -37,20 +37,23 @@ $(".multiple-table-eps .multiple-table-estimate-plus").click(function(){
     $(".multiple-table-rev .multiple-table-td-open-two .multiple-table-estimate-plus").hide();
     $(".multiple-table-rev .multiple-table-td-open-two .multiple-table-estimate-input").show();
     $(".multiple-table-rev .multiple-table-td-open-two").removeClass("multiple-table-td-plus")
+    $(".multiple-table-td-open-two .multiple-table-qtr-close").show();
   } else if ($(this).parent().hasClass("multiple-table-td-open-three")) {
     $(".multiple-table-rev .multiple-table-td-open-three .multiple-table-estimate-plus").hide();
     $(".multiple-table-rev .multiple-table-td-open-three .multiple-table-estimate-input").show();
     $(".multiple-table-rev .multiple-table-td-open-three").removeClass("multiple-table-td-plus")
+    $(".multiple-table-td-open-three .multiple-table-qtr-close").show();
   } else if ($(this).parent().hasClass("multiple-table-td-open-four")) {
     $(".multiple-table-rev .multiple-table-td-open-four .multiple-table-estimate-plus").hide();
     $(".multiple-table-rev .multiple-table-td-open-four .multiple-table-estimate-input").show();
     $(".multiple-table-rev .multiple-table-td-open-four").removeClass("multiple-table-td-plus")
+    $(".multiple-table-td-open-four .multiple-table-qtr-close").show();
   }
 });
 
 // Click into any of the revenue plus signs
 $(".multiple-table-rev .multiple-table-estimate-plus").click(function(){
-  enableRevenueButton();
+  disableRevenueButton();
   fadeNextRevenueTooltip();
   $(this).fadeTo(0).hide();
   $(".multiple-table-rev .multiple-table-td-editing").removeClass("multiple-table-td-editing")  
@@ -66,12 +69,15 @@ $(".multiple-table-rev .multiple-table-estimate-plus").click(function(){
   if ($(this).parent().hasClass("multiple-table-td-open-two")) {
     $(".multiple-table-eps .multiple-table-td-open-two .multiple-table-estimate-plus").hide();
     $(".multiple-table-eps .multiple-table-td-open-two .multiple-table-estimate-input").show();
+    $(".multiple-table-td-open-two .multiple-table-qtr-close").show();
   } else if ($(this).parent().hasClass("multiple-table-td-open-three")) {
     $(".multiple-table-eps .multiple-table-td-open-three .multiple-table-estimate-plus").hide();
     $(".multiple-table-eps .multiple-table-td-open-three .multiple-table-estimate-input").show();
+    $(".multiple-table-td-open-three .multiple-table-qtr-close").show();
   } else if ($(this).parent().hasClass("multiple-table-td-open-four")) {
     $(".multiple-table-eps .multiple-table-td-open-four .multiple-table-estimate-plus").hide();
     $(".multiple-table-eps .multiple-table-td-open-four .multiple-table-estimate-input").show();
+    $(".multiple-table-td-open-four .multiple-table-qtr-close").show();
   }
 });
 
@@ -108,17 +114,39 @@ $(".multiple-table-rev .multiple-table-estimate-input-number").change(function()
   enableRevenueButton();
 });
 
-
-
 // Adjust estimates, update YoY growth
 $(".multiple-table-estimate-input-number").on('input', function(){ 
   var yoy = $(this).parents(".multiple-table-td-open").find(".multiple-table-estimate-yoy-number");
   var yoy_number = parseInt(yoy.html());
   yoy_number = yoy_number + 3;
   yoy.html(yoy_number);
+  $(this).addClass("multiple-table-estimate-input-number-edited");
 });
 
-
+// Delete a quarter's estimate
+$(".multiple-table-qtr-close").click(function(){
+  if ($(this).parent().hasClass("multiple-table-td-open-two")) {
+    $(".multiple-table-td-open-two .multiple-table-estimate-plus").show();
+    $(".multiple-table-td-open-two .multiple-table-estimate-input").hide();
+    $(".multiple-table-td-open-two").addClass("multiple-table-td-plus").removeClass("multiple-table-td-editing");
+    $(".multiple-table-td-open-two .multiple-table-qtr-close").hide();
+  } else if ($(this).parent().hasClass("multiple-table-td-open-three")) {
+    $(".multiple-table-td-open-three .multiple-table-estimate-plus").show();
+    $(".multiple-table-td-open-three .multiple-table-estimate-input").hide();
+    $(".multiple-table-td-open-three").addClass("multiple-table-td-plus").removeClass("multiple-table-td-editing");
+    $(".multiple-table-td-open-three .multiple-table-qtr-close").hide();
+  } else if ($(this).parent().hasClass("multiple-table-td-open-four")) {
+    $(".multiple-table-td-open-four .multiple-table-estimate-plus").show();
+    $(".multiple-table-td-open-four .multiple-table-estimate-input").hide();
+    $(".multiple-table-td-open-four").addClass("multiple-table-td-plus").removeClass("multiple-table-td-editing");
+    $(".multiple-table-td-open-four .multiple-table-qtr-close").hide();
+  }
+  $(".multiple-table-td-open").removeClass("multiple-table-td-editing");
+  $(".multiple-table-td-open-one").addClass("multiple-table-td-editing");
+  estimate_count = estimate_count - 1;
+  updateButton();
+  enableRevenueButton();
+});
 
 
 
@@ -192,7 +220,7 @@ function enableEPSButton() {
   $(".multiple-table-button-eps").delay(100).fadeTo("fast", 1.0);
 }
 
-// Enable EPS button
+// Enable rev button
 function enableRevenueButton() {
   rev_one = true;
   rev_two = true;
@@ -220,9 +248,21 @@ function enableRevenueButton() {
   }
 }
 
+// Disable rev button 
+function disableRevenueButton() {
+  $(".multiple-table-button-rev").prop("disabled", true);
+  $(".multiple-table-button-rev").fadeTo(100, 0.3);
+  $(".multiple-table-button-rev").delay(600).removeClass("multiple-table-button-green");
+}
+
 // Update revenue button
 function updateButton() {
-  $(".multiple-table-button-rev").html("Create " + estimate_count + " Estimates &raquo;");
+  if (estimate_count > 1) {
+    $(".multiple-table-button-rev").html("Create " + estimate_count + " Estimates &raquo;");
+  } else {
+    $(".multiple-table-button-rev").html("Create " + estimate_count + " Estimate &raquo;");
+  }
+
 }
 
 // Toggle to revenue view

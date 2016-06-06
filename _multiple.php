@@ -41,10 +41,10 @@
       <td class="multiple-table-td-qtr">FQ2 '15</td>
       <td class="multiple-table-td-qtr">FQ3 '15</td>
       <td class="multiple-table-td-qtr">FQ4 '15</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-border-left">FQ1 '16</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open">FQ2 '16</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open">FQ3 '16</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open">FQ4 '16</td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-one multiple-table-td-border-left">FQ1 '16 <a class="multiple-table-qtr-close">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-two">FQ2 '16 <a class="multiple-table-qtr-close">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-three">FQ3 '16 <a class="multiple-table-qtr-close">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-four">FQ4 '16 <a class="multiple-table-qtr-close">X</a></td>
     </tr>
     <!-- Actuals, YoY -->
     <tr class="multiple-table-tr-actuals">
@@ -154,10 +154,10 @@
       <td class="multiple-table-td-qtr">FQ2 '15</td>
       <td class="multiple-table-td-qtr">FQ3 '15</td>
       <td class="multiple-table-td-qtr">FQ4 '15</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-border-left">FQ1 '16</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open">FQ2 '16</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open">FQ3 '16</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open">FQ4 '16</td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-one multiple-table-td-border-left">FQ1 '16 <a class="multiple-table-qtr-close">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-two">FQ2 '16 <a class="multiple-table-qtr-close">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-three">FQ3 '16 <a class="multiple-table-qtr-close">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-four">FQ4 '16 <a class="multiple-table-qtr-close">X</a></td>
     </tr>
     <!-- Actuals, YoY -->
     <tr class="multiple-table-tr-actuals">
