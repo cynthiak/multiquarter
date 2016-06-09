@@ -41,10 +41,10 @@
       <td class="multiple-table-td-qtr">FQ2 '15</td>
       <td class="multiple-table-td-qtr">FQ3 '15</td>
       <td class="multiple-table-td-qtr">FQ4 '15</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-one multiple-table-td-border-left">FQ1 '16 <a class="multiple-table-qtr-close">X</a></td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-two">FQ2 '16 <a class="multiple-table-qtr-close">X</a></td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-three">FQ3 '16 <a class="multiple-table-qtr-close">X</a></td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-four">FQ4 '16 <a class="multiple-table-qtr-close">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-one multiple-table-td-border-left">FQ1 '16 <a class="multiple-table-qtr-close" title="Remove your estimate for this quarter">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-two">FQ2 '16 <a class="multiple-table-qtr-close" title="Remove your estimate for this quarter">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-three">FQ3 '16 <a class="multiple-table-qtr-close" title="Remove your estimate for this quarter">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-four">FQ4 '16 <a class="multiple-table-qtr-close" title="Remove your estimate for this quarter">X</a></td>
     </tr>
     <!-- Actuals, YoY -->
     <tr class="multiple-table-tr-actuals">
@@ -125,7 +125,7 @@
     <tr class="multiple-table-tr-button">
       <td colspan="9"></td>
       <td class="multiple-table-td-button" colspan="4">
-        <button class="multiple-table-button multiple-table-button-eps" disabled>Done with EPS. Let me do revenue &raquo;</button>
+        <button class="multiple-table-button multiple-table-button-eps" disabled>Done with EPS. Go do revenue &raquo;</button>
       </td>
     </tr>
   </table>
@@ -154,10 +154,10 @@
       <td class="multiple-table-td-qtr">FQ2 '15</td>
       <td class="multiple-table-td-qtr">FQ3 '15</td>
       <td class="multiple-table-td-qtr">FQ4 '15</td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-one multiple-table-td-border-left">FQ1 '16 <a class="multiple-table-qtr-close">X</a></td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-two">FQ2 '16 <a class="multiple-table-qtr-close">X</a></td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-three">FQ3 '16 <a class="multiple-table-qtr-close">X</a></td>
-      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-four">FQ4 '16 <a class="multiple-table-qtr-close">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-one multiple-table-td-border-left">FQ1 '16 <a class="multiple-table-qtr-close" title="Remove your estimate for this quarter">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-two">FQ2 '16 <a class="multiple-table-qtr-close" title="Remove your estimate for this quarter">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-three">FQ3 '16 <a class="multiple-table-qtr-close" title="Remove your estimate for this quarter">X</a></td>
+      <td class="multiple-table-td-qtr multiple-table-td-open multiple-table-td-open-four">FQ4 '16 <a class="multiple-table-qtr-close" title="Remove your estimate for this quarter">X</a></td>
     </tr>
     <!-- Actuals, YoY -->
     <tr class="multiple-table-tr-actuals">
@@ -246,19 +246,20 @@
 
   <div class="multiple-tooltips">
     <div class="multiple-tooltips-eps">
-      <div class="multiple-tooltips-tooltip multiple-tooltips-eps-one">Make your EPS estimate for Q1</div>
-      <div class="multiple-tooltips-tooltip multiple-tooltips-eps-two">Estimate to unlock Q2 consensus</div>
-      <div class="multiple-tooltips-tooltip multiple-tooltips-eps-three">Estimate to unlock Q3 consensus</div>
-      <div class="multiple-tooltips-tooltip multiple-tooltips-eps-four">Estimate to unlock Q4 consensus</div>
-      <div class="multiple-tooltips-tooltip multiple-tooltips-eps-button">Next, make your revenue estimates</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-eps-one">Enter your EPS estimate for Q1</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-tooltip-wide multiple-tooltips-eps-two">Keep going. After submitting, you'll unlock the consensus.</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-eps-three">Enter your Q3 estimate.</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-eps-four">Last EPS estimate. Enter Q4.</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-tooltip-wide multiple-tooltips-eps-button">Next, estimate on revenue and unlock the consensus.</div>
     </div>
 
     <div class="multiple-tooltips-rev">
-      <div class="multiple-tooltips-tooltip multiple-tooltips-rev-one">Make your Q1 revenue estimate</div>
-      <div class="multiple-tooltips-tooltip multiple-tooltips-rev-two">Make your Q2 revenue estimate</div>
-      <div class="multiple-tooltips-tooltip multiple-tooltips-rev-three">Make your Q3 revenue estimate</div>
-      <div class="multiple-tooltips-tooltip multiple-tooltips-rev-four">Make your Q4 revenue estimate</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-tooltip-wide multiple-tooltips-rev-one">Almost there. Enter your revenue estimates.</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-rev-two">Enter your Q2 revenue estimate.</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-rev-three">Enter your Q3 revenue estimate.</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-rev-four">Enter your Q4 revenue estimate.</div>
       <div class="multiple-tooltips-tooltip multiple-tooltips-rev-button">Done! Create your estimates now.</div>
+      <div class="multiple-tooltips-tooltip multiple-tooltips-tooltip-wide multiple-tooltips-rev-finish-eps">Did you want to update your EPS estimates?</div>
     </div>
   </div>
 
@@ -267,8 +268,8 @@
   <div class="multiple-chart">
     <div class="multiple-chart-highlight"></div>
     <div class="multiple-chart-estimate">
-      <div class="multiple-chart-estimate-dot">dot</div>
-      <div class="multiple-chart-estimate-tooltip">tooltip</div>
+      <div class="multiple-chart-estimate-dot"></div>
+      <div class="multiple-chart-estimate-tooltip"></div>
     </div>
   </div>
 

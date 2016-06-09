@@ -51,8 +51,10 @@ $(".multiple-table-eps .multiple-table-estimate-plus").click(function(){
   }
 });
 
+add_from_revenue = false;
 // Click into any of the revenue plus signs
 $(".multiple-table-rev .multiple-table-estimate-plus").click(function(){
+  add_from_revenue = true;
   disableRevenueButton();
   fadeNextRevenueTooltip();
   $(this).fadeTo(0).hide();
@@ -208,9 +210,14 @@ function fadeNextRevenueTooltip() {
     rev_tooltip = 4;
   } else if (rev_tooltip == 4) {
     $(".multiple-tooltips-rev-four").fadeOut(function(){
-      $(".multiple-tooltips-rev-button").delay(500).fadeIn();
+      if (add_from_revenue == true) {
+        $(".multiple-tooltips-rev-finish-eps").delay(1500).fadeIn();
+      } else {
+        $(".multiple-tooltips-rev-button").delay(500).fadeIn();
+      }
     });
-    rev_tooltip = 5;
+    
+    
   }
 }
 
