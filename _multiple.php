@@ -64,12 +64,14 @@
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="0.49" step="0.01"/>
         </span>
+        <span class="multiple-table-estimate-saved">0.49</span>
         <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">15</span>%</span>
       </td>
       <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-two multiple-table-td-plus">
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="0.45" step="0.01"/>
         </span>
+        <span class="multiple-table-estimate-saved">0.45</span>
         <span class="multiple-table-estimate-plus">+</span>
         <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">10</span>%</span>
       </td>
@@ -77,6 +79,7 @@
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="0.42" step="0.01"/>
         </span>
+        <span class="multiple-table-estimate-saved">0.42</span>
         <span class="multiple-table-estimate-plus">+</span>
         <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">13</span>%</span>
       </td>
@@ -84,6 +87,7 @@
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="0.47" step="0.01"/>
         </span>
+        <span class="multiple-table-estimate-saved">0.47</span>
         <span class="multiple-table-estimate-plus">+</span>
         <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">20</span>%</span>
       </td>
@@ -103,20 +107,24 @@
       <td class="multiple-table-td-data">0.37<br>0.30</td>
       <td class="multiple-table-td-data">0.38<br>0.31</td>
       <td class="multiple-table-td-data">0.42<br>0.32</td>
-      <td class="multiple-table-td-data multiple-table-td-open">
-        <span class="multiple-table-estimize-data"><img src="images/blind-lock.png"></span><br>
+      <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-one">
+        <span class="multiple-table-estimize-data">0.44</span>
+        <span class="multiple-table-estimize-lock"><img src="images/blind-lock.png"></span>
         <span class="multiple-table-ws-data">0.49</span>
       </td>
-      <td class="multiple-table-td-data multiple-table-td-open">
-        <span class="multiple-table-estimize-data"><img src="images/blind-lock.png"></span><br>
+      <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-two">
+        <span class="multiple-table-estimize-data">0.42</span>
+        <span class="multiple-table-estimize-lock"><img src="images/blind-lock.png"></span>
         <span class="multiple-table-ws-data">0.45</span>
       </td>
-      <td class="multiple-table-td-data multiple-table-td-open">
-        <span class="multiple-table-estimize-data"><img src="images/blind-lock.png"></span><br>
+      <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-three">
+        <span class="multiple-table-estimize-data">0.59</span>
+        <span class="multiple-table-estimize-lock"><img src="images/blind-lock.png"></span>
         <span class="multiple-table-ws-data">0.42</span>
       </td>
-      <td class="multiple-table-td-data multiple-table-td-open">
-        <span class="multiple-table-estimize-data"><img src="images/blind-lock.png"></span><br>
+      <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-four">
+        <span class="multiple-table-estimize-data">-</span>
+        <span class="multiple-table-estimize-lock"><img src="images/blind-lock.png"></span>
         <span class="multiple-table-ws-data">0.47</span>
       </td>
     </tr>
@@ -177,12 +185,14 @@
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="2300" step="1"/>
         </span>
+        <span class="multiple-table-estimate-saved">2300</span>
         <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">25</span>%</span>
       </td>
       <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-two multiple-table-td-plus">
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="2330" step="1"/>
         </span>
+        <span class="multiple-table-estimate-saved">2330</span>
         <span class="multiple-table-estimate-plus">+</span>
         <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">31</span>%</span>
       </td>
@@ -190,6 +200,7 @@
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="2321" step="1"/>
         </span>
+        <span class="multiple-table-estimate-saved">2321</span>
         <span class="multiple-table-estimate-plus">+</span>
         <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">33</span>%</span>
       </td>
@@ -197,6 +208,7 @@
         <span class="multiple-table-estimate-input">
           <input type="number" class="multiple-table-estimate-input-number" value="2400" step="1"/>
         </span>
+        <span class="multiple-table-estimate-saved">2400</span>
         <span class="multiple-table-estimate-plus">+</span>
         <span class="multiple-table-estimate-yoy"><span class="multiple-table-estimate-yoy-number">35</span>%</span>
       </td>
@@ -216,20 +228,24 @@
       <td class="multiple-table-td-data">2,332<br>2,304</td>
       <td class="multiple-table-td-data">2,339<br>2,302</td>
       <td class="multiple-table-td-data">2,351<br>2,320</td>
-      <td class="multiple-table-td-data multiple-table-td-open">
-        <span class="multiple-table-estimize-data"><img src="images/blind-lock.png"></span><br>
+      <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-one">
+        <span class="multiple-table-estimize-data">2,350</span>
+        <span class="multiple-table-estimize-lock"><img src="images/blind-lock.png"></span>
         <span class="multiple-table-ws-data">2,300</span>
       </td>
-      <td class="multiple-table-td-data multiple-table-td-open">
-        <span class="multiple-table-estimize-data"><img src="images/blind-lock.png"></span><br>
+      <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-two">
+        <span class="multiple-table-estimize-data">2,380</span>
+        <span class="multiple-table-estimize-lock"><img src="images/blind-lock.png"></span>
         <span class="multiple-table-ws-data">2,330</span>
       </td>
-      <td class="multiple-table-td-data multiple-table-td-open">
-        <span class="multiple-table-estimize-data"><img src="images/blind-lock.png"></span><br>
+      <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-three">
+        <span class="multiple-table-estimize-data">2,333</span>
+        <span class="multiple-table-estimize-lock"><img src="images/blind-lock.png"></span>
         <span class="multiple-table-ws-data">2,321</span>
       </td>
-      <td class="multiple-table-td-data multiple-table-td-open">
-        <span class="multiple-table-estimize-data"><img src="images/blind-lock.png"></span><br>
+      <td class="multiple-table-td-data multiple-table-td-open multiple-table-td-open-four">
+        <span class="multiple-table-estimize-data">-</span>
+        <span class="multiple-table-estimize-lock"><img src="images/blind-lock.png"></span>
         <span class="multiple-table-ws-data">2,400</span>
       </td>
     </tr>

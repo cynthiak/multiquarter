@@ -21,6 +21,9 @@
   <!-- Javascript -->
   <script src="multiquarter.js"></script>
 
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/8a41249dde.js"></script>
+
   <!-- URL Parameters -->
   <?php 
     $estimate = $_GET['estimate'];

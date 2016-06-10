@@ -227,9 +227,13 @@ td.multiple-table-td-label {
 
 .multiple-table-td-qtr {
   font-size: 12px;
-  color: #666;
+  color: #9d9d9d;
   font-weight: 600;
   text-align: center;
+}
+.multiple-table-td-qtr.multiple-table-td-open {
+  color: #555;
+  font-weight: bold;
 }
 .multiple-table-td-qtr:last-child {
   border-right: 1px solid #ddd;
@@ -281,28 +285,20 @@ td.multiple-table-td-label {
 .multiple-table-tr-actuals .multiple-table-td-open,
 .multiple-table-tr-consensus .multiple-table-td-open {
   border-left: 1px solid #ddd;
+  font-weight: 600;
 }
 
 .multiple-table-tr-actuals .multiple-table-td-open {
   padding: 8px 10px 6px;
   width: 72px;
 }
-.multiple-table-tr-consensus .multiple-table-td-open {
-  padding: 10px 10px 6px;
+.multiple-table-estimize-lock {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: block;
 }
 
 /* OPEN QUARTERS: FORM */
-/*editing
-edited
-
-plus
-plus:hover
-plus:active
-
-saved
-saved:hover
-saved:active*/
-
 .multiple-table-qtr-close {
   color: #bbb;
   opacity: 0.8;
@@ -321,17 +317,29 @@ saved:active*/
   margin-bottom: 2px;
   width: 100%;
   height: 29px;
+  font-weight: normal;
   color: #bbb;
   font-style: italic;
 }
 .multiple-table-estimate-input-number:focus {
   outline: 0;
 }
-
+.multiple-table-estimate-saved {
+  display: none;
+  color: #DA00E1;
+  font-weight: 600;
+}
 .multiple-table-estimate-yoy {
+  display: block;
   color: #DA00E1;
   font-size: 12px;
   font-weight: 600;
+  display: block;
+}
+.multiple-table-estimize-data {
+  display: none;
+}
+.multiple-table-ws-data {
   display: block;
 }
   /*STATE: EDITING */
@@ -384,6 +392,27 @@ saved:active*/
     background: #fff url('images/check.png') no-repeat 55px center;
     border: 1px solid #bbbbbb;
   }
+  /*STATE: SUBMITTED */
+  .multiple-table-submitted .multiple-table-td-open-one,
+  .multiple-table-submitted .multiple-table-td-open-three {
+    width: 77px;
+  }
+  .multiple-table-submitted .multiple-table-td-open-two,
+  .multiple-table-submitted .multiple-table-td-open-four {
+    width: 78px;
+  }
+  .multiple-table-submitted .multiple-table-td-submitted .multiple-table-estimate-yoy{
+    font-size: 13px;
+    font-weight: normal;
+  }
+  .multiple-table-tr-actuals .multiple-table-td-submitted,
+  .multiple-table-tr-consensus .multiple-table-td-submitted {
+    padding: 6px 10px;
+  }
+  /*STATE: EDIT MODE AFTER SUBMIT */
+  .multiple-table-submitted .multiple-table-estimate-saved {
+
+  }
 
 
 /* OPEN QUARTERS: TOOLTIPS */
@@ -434,10 +463,13 @@ saved:active*/
   .multiple-tooltips-rev-four {
     left: 24px;
   }
-  .multiple-tooltips-eps-button,
-  .multiple-tooltips-rev-button {
+  .multiple-tooltips-eps-button{
     top: 155px;
     left: -125px;
+  }
+  .multiple-tooltips-rev-button {
+    top: 155px;
+    left: -95px;
   }
   .multiple-tooltips-rev-finish-eps {
     top: -50px;
@@ -493,7 +525,29 @@ saved:active*/
     border: 1px solid #218A00;
     box-shadow: inset 0px 1px 7px 0px rgba(0,0,0,0.50);
   }
-
+.multiple-table-button-saving,
+.multiple-table-button-saving:hover,
+.multiple-table-button-saving:active {
+  background-image: linear-gradient(-180deg, #BBBBBB 0%, #999999 100%);
+  border: 1px solid #999999;
+  border-radius: 1px;
+}
+.multiple-table-button-edit {
+  background-image: linear-gradient(-180deg, #BBBBBB 0%, #999999 100%);
+  border: 1px solid #999999;
+  border-radius: 1px;
+}
+.multiple-table-button-edit:hover {
+  background-image: linear-gradient(-180deg, #BBBBBB 0%, #737373 100%);
+  border: 1px solid #999999;
+  border-radius: 1px;
+}
+.multiple-table-button-edit:active {
+  background-image: linear-gradient(-180deg, #BBBBBB 0%, #868686 100%);
+  border: 1px solid #999999;
+  box-shadow: inset 0px 1px 7px 0px rgba(0,0,0,0.50);
+  border-radius: 1px;
+}
 
 
 /* MULTIPLE: CHART *****************************/
