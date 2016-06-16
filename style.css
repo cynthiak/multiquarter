@@ -321,6 +321,10 @@ td.multiple-table-td-label {
   color: #bbb;
   font-style: italic;
 }
+.multiple-table-eps .multiple-table-estimate-input-number {
+  color: #555;
+  font-style: normal;
+}
 .multiple-table-estimate-input-number:focus {
   outline: 0;
 }
@@ -444,6 +448,7 @@ td.multiple-table-td-label {
   }
   .multiple-tooltips-eps-one {
     left: -200px;
+    display: inline;
   }
   .multiple-tooltips-rev-one {
     left: -237px;

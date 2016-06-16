@@ -1,7 +1,7 @@
 <div class="multiple container">
   <div class="multiple-header">
     <div class="multiple-header-title">
-      Earnings Charts: Historical
+      Earnings Charts: Historical EPS
     </div>
     <a href="index.php?estimate=single" class="multiple-header-link">&laquo; Back to single quarter</a>
   </div>

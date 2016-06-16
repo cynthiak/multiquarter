@@ -183,6 +183,7 @@ $(".multiple-table-button-rev").click(function(){
 
     // turn off tooltips
     $(".multiple-tooltips").fadeOut();
+    $(".multiple-table-qtr-close").hide();
 
     setTimeout(function(){
 
@@ -360,7 +361,6 @@ function toggleRevenue() {
   $(".multiple-tooltips-eps").hide();
   $(".multiple-table-rev").show();
   $(".multiple-tooltips-rev").delay(500).fadeIn();
-  $(".multiple-table-td-open-one .multiple-table-estimate-input input").focus();
 }
 
 // Toggle to EPS view
